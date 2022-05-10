@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Night Light</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/NL.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/lightgallery.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+	<header class="header">
+		<span class="menu" id="show-menu">
+			<i class="fas fa-bars"></i>
+		</span>
+		<div class="header__logo">nl</div>
+		<nav class="nav">
+			<a class="nav__link" href="#" data-scroll="#about">About</a>
+			<a class="nav__link" href="#" data-scroll="#activities">Activities</a>
+			<a class="nav__link" href="#" data-scroll="#private">Private events</a>
+			<a class="nav__link" href="#" data-scroll="#program">Program</a>
+			<a class="nav__link" href="#" data-scroll="#contact">Contact us</a>
+		</nav>
+		<div class="header__icons">
+			<img class="header__img" src="img/icons/insta.png" alt="">
+			<img class="header__img" src="img/icons/facebook.png" alt="">
+			<img class="header__img" src="img/icons/tg.png" alt="">
+		</div>
+	</header>
+
+	<div id="hidden-menu">
+		<span class="close">
+			<i class="fas fa-times"></i>
+		</span>
+		<a class="nav__link" href="#" data-scroll="#about">About</a>
+		<a class="nav__link" href="#" data-scroll="#activities">Activities</a>
+		<a class="nav__link" href="#" data-scroll="#private">Private events</a>
+		<a class="nav__link" href="#" data-scroll="#program">Program</a>
+		<a class="nav__link" href="#" data-scroll="#contact">Contact us</a>
+	</div>
+
+
+	<section class="modal hidden" id="learn-window">
+		<div class="modal__hidden">
+			<h2 class="modal__title">Any questions?</h2>
+			<h3 class="modal__subtitle">Ask them right now!</h3>
+			<div class="modal__container">
+				<div class="modal__inputbox">
+					<span class="modal__text">Name</span>
+					<input type="text" required="required">
+				</div>
+
+				<div class="modal__inputbox">	
+					<span class="modal__text">Mail</span>
+					<input type="text" required="required">
+				</div>
+
+				<div class="modal__inputbox">	
+					<span class="modal__text">Phone* <span class="modal__subtext">(not necessary)</span></span>
+					<input id="numer-input" type="text" required="required">
+				</div>
+
+				<div class="modal__inputbox">	
+					<span class="modal__text">Your questions</span>
+					<textarea class="modal__area" placeholder="enter your questions"></textarea>
+				</div>
+
+				<button class="btn submit__btn" type="submit">Submit</button>
+
+			</div>
+
+			<button  class="modal__close"><i class="fas fa-times to-close"></i></button>
+		</div>
+	</section>
+
+
+	<section class="modal hidden" id="private-window">
+			<div class="modal__hidden">
+				<h2 class="modal__title">Private party info</h2>
+				<div class="modal__desc">
+					You have a unique chance to take part in a private party.
+					We provide some exclusive services and activities for private party guests.
+					Enter your contact details and we will send you all the necessary information.
+				</div>
+				<div class="modal__container">
+
+					<div class="modal__inputbox">
+						<span class="modal__text">Name</span>
+						<input type="text" required="required">
+					</div>
+
+					<div class="modal__inputbox">	
+						<span class="modal__text">Mail</span>
+						<input type="text" required="required">
+					</div>
+
+					<button class="btn submit__btn" type="submit">Submit</button>
+
+				</div>
+
+				<button  class="modal__close"><i class="fas fa-times to-close"></i></button>
+			</div>
+		</section>
+
+		<section class="modal hidden" id="book-window">
+			<div class="modal__hidden">
+				<h2 class="modal__title">Book your tickets now!</h2>
+				<div class="modal__desc">
+					Enter some contact details and we will find the most convenient place for you.
+				</div>
+				<div class="modal__container">
+
+					<div class="modal__inputbox">
+						<span class="modal__text">Name</span>
+						<input type="text" required="required">
+					</div>
+
+					<div class="modal__inputbox">	
+						<span class="modal__text">Mail</span>
+						<input type="text" required="required">
+					</div>
+
+					<div class="modal__inputbox">	
+						<span class="modal__text">State</span>
+						<input type="text" required="required" placeholder="Nevada">
+					</div>
+
+					<div class="modal__selector">
+						<span class="modal__text">Type</span>
+						<label class="modal__cheker">
+							<input type="checkbox" id="reg"> Regular
+						</label>
+						<label class="modal__cheker">
+							<input type="checkbox" id="priv"> Private
+						</label>
+					</div>
+
+					<button class="btn submit__btn" type="submit">Submit</button>
+
+				</div>
+
+				<button  class="modal__close"><i class="fas fa-times to-close"></i></button>
+			</div>
+		</section>
+
+
+
+	<div class="intro">
+		<div class="intro__lines">
+			<h1 class="intro__title" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Night Light Party Club</h1>
+			<h2 class="intro__subtitle" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Join us this summer for unforgettable stunning events</h2>
+		</div>
+	</div>
+
+	<hr>
+
+	<section class="section section__welcome">
+		<div class="container welcome__container">
+			<div class="section__block">
+				<h2 class="section__title">Welcome to night party</h2>
+				<div class="welcome__text">
+					<p class="welcome__paragraph">
+						Lot of people all over the world will join us this summer
+	                    for awesome party! This starts on  14 August and lasts
+	                    until the end of September.
+	                    Enjoy our best entertainments, give it your all, have fun
+	                    with other members and fill the Night Light party spirit!
+					</p>
+	                <p class="welcome__paragraph">
+	                	We have dance floor, free bar, swimming pull and some
+	                    other entertainments like billiards and slots.
+	                </p>
+	                <p class="welcome__paragraph">
+	                	Sing with DJ, dance until you drop, make photos and get
+	                    unforgettable memories!
+	                </p>
+				</div>
+				<button class="btn welcome__btn" id="learn-more">Learn more <i class="fas fa-arrow-right"></i></button>
+			</div>
+			<div class="section__block section__block--img">
+				<img class="welcome__img" src="img/welcome club.jpg" alt="">
+			</div>
+		</div>	
+	</section>
+
+	<hr>
+
+	<section class="section section__about" id="about">
+		<div class="container about__container">
+			<div class="section__block  section__block--img">
+				<img class="about__img" src="img/main-dj.jpg" alt="">
+			</div>
+			<div class="section__block">
+				<h2 class="section__title">We are team of brightnes DJ and great dancers</h2>
+				<div class="welcome__text">
+					<p class="welcome__paragraph">
+						Every year, since 2017,  Night Light creates amazing programs,
+	                    which will give you the best mood and amotions.
+	                    Our team consists of professionals who have many years of
+	                    experiance.
+					</p>
+	                <p class="welcome__paragraph">
+	                	Unique program and tracks make you sing and dance with
+	                    the rest of the participants.
+	                    We have the most modern equipment which makes the party 
+	                    even more wonderful.
+	                </p>
+				</div>
+				<div class="about__icons">
+					<div class="about__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+						<img src="img/icons/music.png" alt="">
+						<p>Listen popular music</p>
+					</div>
+					<div class="about__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+						<img src="img/icons/lettalk.png" alt="">
+						<p class="about__commun">Communicate</p>
+					</div>
+					<div class="about__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+						<img src="img/icons/drink.png" alt="">
+						<p>Taste branded coctails</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="hr__bot">
+
+	<section class="section activity__section" id="activities">
+		<div class="container">
+			<h2 class="section__title">We are ready to offer amazing activities</h2>
+			<div class="activity__galery">
+				<div class="activity__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250">
+					<img src="img/active1.jpg" alt="">
+					<p class="activity__item--desc">Have dance with girls</p>
+				</div>
+				<div class="activity__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250">
+					<img src="img/active2.jpg" alt="">
+					<p class="activity__item--desc">Listen music with DJ</p>
+				</div>
+				<div class="activity__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250">
+					<img src="img/active3.jpg" alt="">
+					<p class="activity__item--desc">Taste delicious cocktails</p>
+				</div>
+			</div>
+			<div class="activity__text">
+				Speek to other, find friends, meet your people and make photos for amotions and expressions!
+			</div>
+			<div class="video__container">
+				<video class="video" controls="controls" poster="img/video-prev.jpg">
+					<source src="video/final.mp4" type="video/mp4">
+				</video>
+				<img class="video__img" src="img/playbig.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<hr class="hr__bot">
+
+	<section class="section private__section" id="private">
+		<div class="container">
+			<h2 class="section__title">See private events</h2>
+			<div class="private__block">
+				<div class="private__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
+					<img src="img/vip1.jpg" alt="">
+					<div class="private__desc">Exusive coctails</div>
+				</div>
+				<div class="private__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
+					<img src="img/vip2.jpg" alt="">
+					<div class="private__desc">Elite girls</div>
+				</div>
+				<div class="private__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
+					<img src="img/vip3.jpg" alt="">
+					<div class="private__desc">Great photosession</div>
+				</div>
+			</div>
+			<button class="btn private__btn" id="private-more">more info</button>
+		</div>
+	</section>
+
+	<hr class="hr__bot">
+
+	<section class="program__section" id="program">
+		<div class="container">
+			<h2 class="section__title">Our programe includes only fun!</h2>
+			<div class="program__block">
+				<div class="program__name">Sing and dance with DJ</div>
+				<img src="img/dj.jpg" alt="" class="program__img program__img--big" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+			</div>
+
+			<img class="program__arrows" src="img/arrows-down.png" alt="">
+
+			<div class="program__block">
+				
+				<div class="program__img">
+					<img src="img/chag1.jpg" alt="" class="program__img" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+				</div>
+				<div class="program__chose">
+					<div class="program__between">
+						<p>Dance, sing and make photo</p>
+						<img class="program__asinc__arrows" src="img/bold-arrows.png" alt="">
+						<p>Take part in interesting challenges</p>
+					</div>
+				</div>
+				<div class="program__img">
+					<img src="img/chag2.jpg" alt="" class="program__img" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
+				</div>
+				
+			</div>
+
+			<img class="program__arrows" src="img/arrows-down.png" alt="">
+
+			<div class="program__block program__block--up">Finaly get in touch with DJ and dancers</div>
+
+			<div class="main__gallery">
+				<h3 class="gallery__title">Also see our gallery over the past years</h3>
+				<div class="inline-gallery-container" id="inline-gallery-container"></div>
+			</div>
+
+		</div>
+	</section>
+
+	<hr class="hr__bot">
+
+	<section class="section contacts__section" id="contact">
+		<div class="container contacts__container">
+			<div class="section__block section__block--contacts">
+				<h2 class="section__title">Get in touch</h2>
+				<h4 class="contacts__title">You can contact us on:</h4>
+				<div class="contacts__text">
+					<p class="contacts__labels">nlparty@gmail.com</p>	<!-- email -->
+					<p class="contacts__labels">+1 (890) 479-II-69</p>	<!-- american number -->
+				</div>
+				<div class="contacts__just">Or just click below</div>
+				<button class="btn contacts__btn" id="to-book">Book tickets now</button>
+			</div>
+			<div class="section__block">
+				<div class="contacts__map">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1984788047766!2d-116.42157691367494!3d38.28876348151837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDE3JzA2LjkiTiAxMTbCsDI1JzQ5LjYiVw!5e1!3m2!1sru!2sby!4v1628113757630!5m2!1sru!2sby" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__confirm">All rights Reserved 2021</div>
+		</div>
+	</footer>	
+	
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="javascript/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="lightgallery/lg-thumbnail.min.js"></script>
+    <script src="lightgallery/lg-zoom.min.js"></script>
+
+	<script src="javascript/main.js"></script>
+</body>
+</html>
